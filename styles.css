@@ -1,20 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /* This CSS starts with mobile version. The @media querys is for tablet and desktop! */
 
 :root {
-  --primary-color: #F8F3EF;
-  --secondary-color: #511624;
-  --tertiary-color: #A54B25;
-  --accent-color: #6A8FB1;
+  --primary-color: #102822;
+  --secondary-color: #432917;
+  --tertiary-color: #D0EFF1;
+  --accent-color: #9CE6BE;
+  --accent-color-2: #f7b85d; 
 }
 
 h1 {
-  font-family: 'Marcellus', serif;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
 }
 
 *,*::before,*::after {
@@ -26,21 +30,21 @@ p {
 /* Navigation for mobile goes here */
 
 .navigation {
-  background: var(--secondary-color);
-  text-align: center;
-  padding: 1em;
+  background: var(--primary-color);
+  /* text-align: center; */
+  padding: 1em 2em;
   position: sticky;
   top: 0;
   z-index: 999;
 }
 
 .navigation a {
-  color: var(--primary-color);
+  color: #ffffff;
   text-decoration: none;
 }
 
 .navigation a:hover {
-  color: var(--accent-color);
+  color: var(--accent-color-2);
   cursor: pointer;
 }
 
@@ -59,12 +63,12 @@ p {
 }
 
 .nav-toggle-label span {
-  color: var(--primary-color);
+  color: #ffffff;
   font-size: 2em;
 }
 
 .nav-toggle-label span:hover {
-  color: var(--accent-color);
+  color: var(--accent-color-2);
   cursor: pointer;
 }
 
@@ -73,7 +77,7 @@ nav {
   text-align: center;
   top: 100%;
   left: 0;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   width: 100%;
   transform: scale(1, 0);
   transition: transform 400ms ease-in-out;
@@ -95,15 +99,15 @@ nav a {
   color: var(--primary-color);
   text-decoration: none;
   font-size: 1.2rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
 
 nav a:hover {
-  color: var(--accent-color);
+  color: var(--accent-color-2);
 }
 
 .nav-toggle:checked ~ nav {
@@ -113,4 +117,63 @@ nav a:hover {
 .nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+
+
+
+/* Media querey for desktop */
+
+@media screen and (min-width: 930px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5em;
+  }
+
+  nav {
+    all: unset;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  /*   add line baove or below selection on hover */
+
+  /* nav a::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background: var(--accent-color);
+    position: absolute;
+    bottom: -0.5em;
+    left: 0;
+    right: 0;
+
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+    transform-origin: right;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  } */
 }
