@@ -10,10 +10,24 @@
   --accent-color-2: #f7b85d; 
 }
 
+/* The sized listed here are for MOBILE!!!!! */
+
 h1 {
   font-family: "Dosis", sans-serif;
   font-weight: 600;
-  font-size: 64px;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 p {
@@ -119,15 +133,53 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+.hero {
+  background-image: url(Images/mobile-her02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+}
+
+.hero h1 {
+  text-align: right;
+  padding-top: .9em;
+  padding-right: .8em;
+}
+
+.hero h2 {
+  text-align: right;
+  padding-top: .5em;
+  padding-right: .8em;
+}
 
 
 
 
 /* Media querey for desktop */
 
-@media screen and (min-width: 930px) {
+@media screen and (min-width: 950px) {
   .nav-toggle-label {
     display: none;
+  }
+
+  /* HEADING HERE ARE FOR DESKTOP */
+  h1 {
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+  }
+  
+  h2 {
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+  }
+  
+  h3 {
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
   }
 
   .navigation {
@@ -156,6 +208,10 @@ nav a:hover {
     position: relative;
   }
 
+  .logo {
+    font-size: 36px;
+  }
+
   /*   add line baove or below selection on hover */
 
   /* nav a::before {
@@ -176,4 +232,24 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1, 1);
   } */
+
+  .hero {
+    background-image: url(Images/hero22.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+  }
+  
+  .hero h1 {
+    text-align: right;
+    padding-top: .9em;
+    padding-right: 1.5em;
+  }
+  
+  .hero h2 {
+    text-align: right;
+    padding-top: .5em;
+    padding-right: 1.5em;
+  }
 }
