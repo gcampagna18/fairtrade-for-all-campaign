@@ -184,17 +184,33 @@ nav a:hover {
   
 }
 
-.how-fairtrade-video {
-  /* width: 350px;
-  height: 167px; */
+/* .how-fairtrade-video {
+  width: 350px;
+  height: 167px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 8px;
+} */
+
+.fairtrade-video {
+  flex: 2;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.fairtrade-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .how-fairtrade-text {
   color: #ffffff;
   padding-top: 1.2em;
+  margin-left: .5em;
 }
 
 .how-fairtrade h1 {
@@ -216,15 +232,18 @@ nav a:hover {
 }
 
 .impact-card-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1em;
 }
 
 .impact-card {
   background-color: var(--accent-color);
   padding: 1.2em .8em;
-  width: 167px;
+  width: 85%;
+  /* width: 167px; */
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -249,6 +268,47 @@ nav a:hover {
 .impact-card h3 {
   text-align: center;
 }
+
+.benefits {
+  background-color: var(--tertiary-color);
+  padding: 2em 1.3em;
+}
+
+.benefits h1 {
+  padding-bottom: .5em;
+  text-align: center;
+}
+
+.benefit-card-section {
+  display: block;
+  /* gap: 1em; */
+}
+
+.benefit-card {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+}
+
+.benefit-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.benefit-card h2 {
+  padding-bottom: .5em;
+}
+
+.benefit-card-txt {
+  padding: 1em;
+}
+
+
+
+
+
+
 
 /* Media querey for desktop */
 
@@ -383,24 +443,16 @@ nav a:hover {
     display: flex;
     align-items: center;
     gap: 1.5em;
-    
   }
-  
-  .how-fairtrade-video {
-    /* width: 692px;
-    height: 390px; */
-    /* margin-left: auto;
-    margin-right: auto; */
-    border-radius: 8px;
-  }
-  
+ 
   .how-fairtrade-text {
     color: #ffffff;
-    padding-top: 1.2em;
+    flex: 1;
   }
   
   .how-fairtrade h1 {
     padding-bottom: .3em;
+    padding-top: 0;
   }
   
   .how-fairtrade p {
@@ -413,15 +465,20 @@ nav a:hover {
   }
 
   .impact-card-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
     /* gap: 1em; */
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .impact-card {
     background-color: var(--accent-color);
     padding: 3em 2em;
-    width: 285px;
+    flex: 1;
+    /* width: 285px; */
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -438,6 +495,37 @@ nav a:hover {
     font-size: 72px;
     text-align: center;
     padding-bottom: .1em;
+  }
+
+
+  .benefit-card-section {
+    /* display: grid;
+    grid-template-columns: repeat(3, 2fr); */
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0 auto;
+  }
+  
+  .benefit-card {
+    width: 350px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  .benefit-card img {
+    width: 350px;
+    height: 100%;
+  }
+  
+  .benefit-card h2 {
+    padding-bottom: .5em;
+  }
+  
+  .benefit-card-txt {
+    padding: 1em;
   }
 
 }
