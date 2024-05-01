@@ -30,6 +30,12 @@ h3 {
   font-size: 20px;
 }
 
+h4 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
 p {
   font-family: "Zilla Slab", serif;
   font-weight: 400;
@@ -304,9 +310,120 @@ nav a:hover {
   padding: 1em;
 }
 
+.footer {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  padding: 2em 1.3em;
+  display: block;
+}
 
+.footer h1 {
+  padding-bottom: .8em;
+}
 
+.footer-content1 {
+  text-align: center;
+}
 
+.footer-content1 h2 {
+  padding-bottom: .5em;
+}
+
+.footer-content1 p {
+  padding-bottom: .5em;
+}
+
+.footer-content1 img {
+  padding: .5em .8em;
+}
+
+.footer-content2 {
+  text-align: center;
+}
+
+.footer-content2 h4 {
+  padding: .8em 0;
+}
+
+form {
+  width: 100%;
+  /* padding: 15px; */
+}
+
+form label {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  /* padding-bottom: .3em; */
+}
+
+form input {
+  margin: .5em 0;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  /* border-bottom: 3px solid var(--accent-color-2); */
+  background-color: white;
+  border-radius: 8px;
+ }
+
+ form textarea {
+  margin: .5em 0;
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid var(--accent-color-2);
+  background-color: white;
+  border-radius: 8px;
+ }
+
+ button {
+  margin: 1.3em .5em;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+ }
+
+ button:hover {
+  background-color: var(--accent-color-2);
+ }
+
+ .footer-nav {
+  padding: .8em 0;
+ }
+
+ .footer-nav ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
+
+ .footer-nav li {
+  padding: .7em 0;
+ }
+
+ .footer-nav a {
+  color: #ffffff;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+ }
+
+ .footer-nav a:hover {
+  color: var(--accent-color-2);
+  cursor: pointer;
+ }
+
+ .footer-content3 p {
+  color: #ffffff;
+  text-align: center;
+  padding: .8em 0;
+ }
 
 
 
