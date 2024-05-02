@@ -113,16 +113,15 @@ nav ul {
 
 nav li {
   margin-bottom: 1em;
-  margin-left: 1em;
+  margin-left: .7em;
 }
 
 nav a {
   color: var(--primary-color);
   text-decoration: none;
   font-size: 1.2rem;
-  font-family: "Zilla Slab", serif;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
@@ -333,8 +332,15 @@ nav a:hover {
   padding-bottom: .5em;
 }
 
-.footer-content1 img {
-  padding: .5em .8em;
+.footer-content1 i {
+  padding: .3em;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.footer-content1 i:hover {
+  color: var(--accent-color-2);
+  cursor: pointer;
 }
 
 .footer-content2 {
@@ -521,7 +527,7 @@ form input {
   .hero h2 {
     text-align: right;
     padding-top: .5em;
-    padding-right: 1.5em;
+    padding-right: 3em;
   }
 
   .campaign {
@@ -644,5 +650,130 @@ form input {
   .benefit-card-txt {
     padding: 1em;
   }
+
+
+  .footer {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    padding: 2em 1.3em;
+  }
+
+  .footer-top-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    /* margin: 0 auto; */
+    justify-content: center;
+  }
+  
+  .footer h1 {
+    padding-bottom: .3em;
+  }
+  
+  .footer-content1 {
+    text-align: left;
+    width: 572px;
+  }
+  
+  .footer-content1 h2 {
+    padding-bottom: .5em;
+  }
+  
+  .footer-content1 p {
+    padding-bottom: .5em;
+  }
+  
+  .footer-content2 {
+    text-align: left;
+    width: 572px;
+  }
+  
+  .footer-content2 h4 {
+    padding: .8em 0;
+  }
+  
+  form {
+    width: 100%;
+    /* padding: 15px; */
+  }
+  
+  form label {
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+    /* padding-bottom: .3em; */
+  }
+  
+  form input {
+    margin: .5em 0;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    /* border-bottom: 3px solid var(--accent-color-2); */
+    background-color: white;
+    border-radius: 8px;
+    padding: .8em 0;
+   }
+  
+   form textarea {
+    margin: .5em 0;
+    width: 100%;
+    border: none;
+    background-color: white;
+    border-radius: 8px;
+    padding: .8em 0;
+   }
+  
+   button {
+    margin: 1.3em .5em;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+   }
+  
+   button:hover {
+    background-color: var(--accent-color-2);
+   }
+  
+   .footer-nav {
+    padding: .8em 0;
+   }
+  
+   .footer-nav ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+   }
+  
+   .footer-nav li {
+    padding: 0 .5em;
+   }
+  
+   .footer-nav a {
+    color: #ffffff;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+   }
+  
+   .footer-nav a:hover {
+    color: var(--accent-color-2);
+    cursor: pointer;
+   }
+  
+   .footer-content3 p {
+    color: #ffffff;
+    text-align: center;
+    padding: .8em 0;
+   }
 
 }
